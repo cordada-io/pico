@@ -3,7 +3,7 @@
 @use "../../settings" as *;
 @use "../../helpers/functions";
 @use "theme-colors";
-@use "custom";
+@use "custom" as *;
 
 // Default: Light theme
 @mixin theme {
