@@ -442,6 +442,28 @@ $slate-100: #dfe3eb;
 $slate-50: #eff1f4;
 $slate: $slate-600;
 
+// Timetracker
+$timetracker-950: #0F0F36;
+$timetracker-900: #181849;
+$timetracker-850: #22225D;
+$timetracker-800: #2C2C71;
+$timetracker-750: #373785;
+$timetracker-700: #424299;
+$timetracker-650: #4E4EAD;
+$timetracker-600: #5A5AC1;
+$timetracker-550: #6767D5;
+$timetracker-500: #6766F4;
+$timetracker-450: #8282FD;
+$timetracker-400: #9090FF;
+$timetracker-350: #9E9EFF;
+$timetracker-300: #ACACFF;
+$timetracker-250: #BABAFF;
+$timetracker-200: #C8C8FF;
+$timetracker-150: #D6D6FF;
+$timetracker-100: #E4E4FF;
+$timetracker-50: #F2F2FF;
+$timetracker: $timetracker-550;
+
 $colors: (
   red: (
     950: $red-950,
@@ -465,8 +487,7 @@ $colors: (
     50: $red-50,
     main: $red,
   ),
-  pink: (
-    950: $pink-950,
+  pink: (950: $pink-950,
     900: $pink-900,
     850: $pink-850,
     800: $pink-800,
@@ -487,8 +508,7 @@ $colors: (
     50: $pink-50,
     main: $pink,
   ),
-  fuchsia: (
-    950: $fuchsia-950,
+  fuchsia: (950: $fuchsia-950,
     900: $fuchsia-900,
     850: $fuchsia-850,
     800: $fuchsia-800,
@@ -509,8 +529,7 @@ $colors: (
     50: $fuchsia-50,
     main: $fuchsia,
   ),
-  purple: (
-    950: $purple-950,
+  purple: (950: $purple-950,
     900: $purple-900,
     850: $purple-850,
     800: $purple-800,
@@ -531,8 +550,7 @@ $colors: (
     50: $purple-50,
     main: $purple,
   ),
-  violet: (
-    950: $violet-950,
+  violet: (950: $violet-950,
     900: $violet-900,
     850: $violet-850,
     800: $violet-800,
@@ -553,8 +571,7 @@ $colors: (
     50: $violet-50,
     main: $violet,
   ),
-  indigo: (
-    950: $indigo-950,
+  indigo: (950: $indigo-950,
     900: $indigo-900,
     850: $indigo-850,
     800: $indigo-800,
@@ -575,8 +592,7 @@ $colors: (
     50: $indigo-50,
     main: $indigo,
   ),
-  blue: (
-    950: $blue-950,
+  blue: (950: $blue-950,
     900: $blue-900,
     850: $blue-850,
     800: $blue-800,
@@ -597,8 +613,7 @@ $colors: (
     50: $blue-50,
     main: $blue,
   ),
-  azure: (
-    950: $azure-950,
+  azure: (950: $azure-950,
     900: $azure-900,
     850: $azure-850,
     800: $azure-800,
@@ -619,8 +634,7 @@ $colors: (
     50: $azure-50,
     main: $azure,
   ),
-  cyan: (
-    950: $cyan-950,
+  cyan: (950: $cyan-950,
     900: $cyan-900,
     850: $cyan-850,
     800: $cyan-800,
@@ -641,8 +655,7 @@ $colors: (
     50: $cyan-50,
     main: $cyan,
   ),
-  jade: (
-    950: $jade-950,
+  jade: (950: $jade-950,
     900: $jade-900,
     850: $jade-850,
     800: $jade-800,
@@ -663,8 +676,7 @@ $colors: (
     50: $jade-50,
     main: $jade,
   ),
-  green: (
-    950: $green-950,
+  green: (950: $green-950,
     900: $green-900,
     850: $green-850,
     800: $green-800,
@@ -685,8 +697,7 @@ $colors: (
     50: $green-50,
     main: $green,
   ),
-  lime: (
-    950: $lime-950,
+  lime: (950: $lime-950,
     900: $lime-900,
     850: $lime-850,
     800: $lime-800,
@@ -707,8 +718,7 @@ $colors: (
     50: $lime-50,
     main: $lime,
   ),
-  yellow: (
-    950: $yellow-950,
+  yellow: (950: $yellow-950,
     900: $yellow-900,
     850: $yellow-850,
     800: $yellow-800,
@@ -729,8 +739,7 @@ $colors: (
     50: $yellow-50,
     main: $yellow,
   ),
-  amber: (
-    950: $amber-950,
+  amber: (950: $amber-950,
     900: $amber-900,
     850: $amber-850,
     800: $amber-800,
@@ -751,8 +760,7 @@ $colors: (
     50: $amber-50,
     main: $amber,
   ),
-  pumpkin: (
-    950: $pumpkin-950,
+  pumpkin: (950: $pumpkin-950,
     900: $pumpkin-900,
     850: $pumpkin-850,
     800: $pumpkin-800,
@@ -773,8 +781,7 @@ $colors: (
     50: $pumpkin-50,
     main: $pumpkin,
   ),
-  orange: (
-    950: $orange-950,
+  orange: (950: $orange-950,
     900: $orange-900,
     850: $orange-850,
     800: $orange-800,
@@ -795,8 +802,7 @@ $colors: (
     50: $orange-50,
     main: $orange,
   ),
-  sand: (
-    950: $sand-950,
+  sand: (950: $sand-950,
     900: $sand-900,
     850: $sand-850,
     800: $sand-800,
@@ -817,8 +823,7 @@ $colors: (
     50: $sand-50,
     main: $sand,
   ),
-  grey: (
-    950: $grey-950,
+  grey: (950: $grey-950,
     900: $grey-900,
     850: $grey-850,
     800: $grey-800,
@@ -839,8 +844,7 @@ $colors: (
     50: $grey-50,
     main: $grey,
   ),
-  zinc: (
-    950: $zinc-950,
+  zinc: (950: $zinc-950,
     900: $zinc-900,
     850: $zinc-850,
     800: $zinc-800,
@@ -861,8 +865,7 @@ $colors: (
     50: $zinc-50,
     main: $zinc,
   ),
-  slate: (
-    950: $slate-950,
+  slate: (950: $slate-950,
     900: $slate-900,
     850: $slate-850,
     800: $slate-800,
@@ -882,5 +885,26 @@ $colors: (
     100: $slate-100,
     50: $slate-50,
     main: $slate,
+  ),
+  timetracker: (950: $timetracker-950,
+    900: $timetracker-900,
+    850: $timetracker-850,
+    800: $timetracker-800,
+    750: $timetracker-750,
+    700: $timetracker-700,
+    650: $timetracker-650,
+    600: $timetracker-600,
+    550: $timetracker-550,
+    500: $timetracker-500,
+    450: $timetracker-450,
+    400: $timetracker-400,
+    350: $timetracker-350,
+    300: $timetracker-300,
+    250: $timetracker-250,
+    200: $timetracker-200,
+    150: $timetracker-150,
+    100: $timetracker-100,
+    50: $timetracker-50,
+    main: $timetracker,
   ),
 );

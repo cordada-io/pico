@@ -1,0 +1,31 @@
+@use "sass:map";
+@use "../../settings" as *;
+@use "../../colors" as *;
+
+$color-mappings: (
+  "timetracker": ("dark": ("text-selection-color": rgba($timetracker-350, 0.1875),
+      "primary": $timetracker-350,
+      "primary-background": $timetracker-550,
+      "primary-underline": rgba($timetracker-350, 0.5),
+      "primary-hover": $timetracker-250,
+      "primary-hover-background": $timetracker-500,
+      "primary-focus": rgba($timetracker-350, 0.375),
+      "primary-inverse": $white,
+      "switch-thumb-box-shadow": 0 0 0 rgba(0, 0, 0, 0),
+    ),
+    "light": ("text-selection-color": rgba($timetracker-400, 0.25),
+      "primary": $timetracker-550,
+      "primary-background": $timetracker-550,
+      "primary-underline": rgba($timetracker-550, 0.5),
+      "primary-hover": $timetracker-650,
+      "primary-hover-background": $timetracker-600,
+      "primary-focus": rgba($timetracker-400, 0.5),
+      "primary-inverse": $white,
+      "switch-thumb-box-shadow": 0 0 0 rgba(0, 0, 0, 0),
+    ),
+  ),
+);
+
+@function get($key, $mode: "light") {
+  @return map.get(map.get(map.get($color-mappings, $theme-color), $mode), $key);
+}
