@@ -74,7 +74,7 @@
 
     // Inserted (<ins>) & Deleted (<del>)
     #{$css-var-prefix}ins-color: #{mix($jade-450, $zinc-750)};
-    #{$css-var-prefix}del-color: #{mix($red-500, $zinc-750)};
+    #{$css-var-prefix}del-color: $red-500;
 
     // Blockquote
     #{$css-var-prefix}blockquote-border-color: var(#{$css-var-prefix}muted-border-color);

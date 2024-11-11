@@ -1,6 +1,10 @@
+@use "../settings" as *;
+@use "../themes/cordada/custom" as *;
+
 // B&W
 $black: #000;
-$white: #fff;
+
+$white: if($theme-color =="timetracker", $cordada-white-background, #fff);
 
 // Red
 $red-950: #1c0d06;
@@ -464,9 +468,30 @@ $timetracker-100: #E4E4FF;
 $timetracker-50: #F2F2FF;
 $timetracker: $timetracker-550;
 
+// tt-slate
+$tt-slate-950: #100d23;
+$tt-slate-900: #19182e;
+$tt-slate-850: #222139;
+$tt-slate-800: #2b2b44;
+$tt-slate-750: #34354f;
+$tt-slate-700: #3d3f5a;
+$tt-slate-650: #464965;
+$tt-slate-600: #505470;
+$tt-slate-550: #5a5f7b;
+$tt-slate-500: #646a86;
+$tt-slate-450: #6e7591;
+$tt-slate-400: #79809c;
+$tt-slate-350: #848ba7;
+$tt-slate-300: #8f96b2;
+$tt-slate-250: #9aa1bd;
+$tt-slate-200: #a5acc8;
+$tt-slate-150: #b0b7d3;
+$tt-slate-100: #bbc2de;
+$tt-slate-50: #c7cde9;
+$tt-slate: $tt-slate-600;
+
 $colors: (
-  red: (
-    950: $red-950,
+  red: (950: $red-950,
     900: $red-900,
     850: $red-850,
     800: $red-800,
@@ -487,8 +512,7 @@ $colors: (
     50: $red-50,
     main: $red,
   ),
-  pink: (
-    950: $pink-950,
+  pink: (950: $pink-950,
     900: $pink-900,
     850: $pink-850,
     800: $pink-800,
@@ -509,8 +533,7 @@ $colors: (
     50: $pink-50,
     main: $pink,
   ),
-  fuchsia: (
-    950: $fuchsia-950,
+  fuchsia: (950: $fuchsia-950,
     900: $fuchsia-900,
     850: $fuchsia-850,
     800: $fuchsia-800,
@@ -531,8 +554,7 @@ $colors: (
     50: $fuchsia-50,
     main: $fuchsia,
   ),
-  purple: (
-    950: $purple-950,
+  purple: (950: $purple-950,
     900: $purple-900,
     850: $purple-850,
     800: $purple-800,
@@ -553,8 +575,7 @@ $colors: (
     50: $purple-50,
     main: $purple,
   ),
-  violet: (
-    950: $violet-950,
+  violet: (950: $violet-950,
     900: $violet-900,
     850: $violet-850,
     800: $violet-800,
@@ -575,8 +596,7 @@ $colors: (
     50: $violet-50,
     main: $violet,
   ),
-  indigo: (
-    950: $indigo-950,
+  indigo: (950: $indigo-950,
     900: $indigo-900,
     850: $indigo-850,
     800: $indigo-800,
@@ -597,8 +617,7 @@ $colors: (
     50: $indigo-50,
     main: $indigo,
   ),
-  blue: (
-    950: $blue-950,
+  blue: (950: $blue-950,
     900: $blue-900,
     850: $blue-850,
     800: $blue-800,
@@ -619,8 +638,7 @@ $colors: (
     50: $blue-50,
     main: $blue,
   ),
-  azure: (
-    950: $azure-950,
+  azure: (950: $azure-950,
     900: $azure-900,
     850: $azure-850,
     800: $azure-800,
@@ -641,8 +659,7 @@ $colors: (
     50: $azure-50,
     main: $azure,
   ),
-  cyan: (
-    950: $cyan-950,
+  cyan: (950: $cyan-950,
     900: $cyan-900,
     850: $cyan-850,
     800: $cyan-800,
@@ -663,8 +680,7 @@ $colors: (
     50: $cyan-50,
     main: $cyan,
   ),
-  jade: (
-    950: $jade-950,
+  jade: (950: $jade-950,
     900: $jade-900,
     850: $jade-850,
     800: $jade-800,
@@ -685,8 +701,7 @@ $colors: (
     50: $jade-50,
     main: $jade,
   ),
-  green: (
-    950: $green-950,
+  green: (950: $green-950,
     900: $green-900,
     850: $green-850,
     800: $green-800,
@@ -707,8 +722,7 @@ $colors: (
     50: $green-50,
     main: $green,
   ),
-  lime: (
-    950: $lime-950,
+  lime: (950: $lime-950,
     900: $lime-900,
     850: $lime-850,
     800: $lime-800,
@@ -729,8 +743,7 @@ $colors: (
     50: $lime-50,
     main: $lime,
   ),
-  yellow: (
-    950: $yellow-950,
+  yellow: (950: $yellow-950,
     900: $yellow-900,
     850: $yellow-850,
     800: $yellow-800,
@@ -751,8 +764,7 @@ $colors: (
     50: $yellow-50,
     main: $yellow,
   ),
-  amber: (
-    950: $amber-950,
+  amber: (950: $amber-950,
     900: $amber-900,
     850: $amber-850,
     800: $amber-800,
@@ -773,8 +785,7 @@ $colors: (
     50: $amber-50,
     main: $amber,
   ),
-  pumpkin: (
-    950: $pumpkin-950,
+  pumpkin: (950: $pumpkin-950,
     900: $pumpkin-900,
     850: $pumpkin-850,
     800: $pumpkin-800,
@@ -795,8 +806,7 @@ $colors: (
     50: $pumpkin-50,
     main: $pumpkin,
   ),
-  orange: (
-    950: $orange-950,
+  orange: (950: $orange-950,
     900: $orange-900,
     850: $orange-850,
     800: $orange-800,
@@ -817,8 +827,7 @@ $colors: (
     50: $orange-50,
     main: $orange,
   ),
-  sand: (
-    950: $sand-950,
+  sand: (950: $sand-950,
     900: $sand-900,
     850: $sand-850,
     800: $sand-800,
@@ -839,8 +848,7 @@ $colors: (
     50: $sand-50,
     main: $sand,
   ),
-  grey: (
-    950: $grey-950,
+  grey: (950: $grey-950,
     900: $grey-900,
     850: $grey-850,
     800: $grey-800,
@@ -861,8 +869,7 @@ $colors: (
     50: $grey-50,
     main: $grey,
   ),
-  zinc: (
-    950: $zinc-950,
+  zinc: (950: $zinc-950,
     900: $zinc-900,
     850: $zinc-850,
     800: $zinc-800,
@@ -883,8 +890,7 @@ $colors: (
     50: $zinc-50,
     main: $zinc,
   ),
-  slate: (
-    950: $slate-950,
+  slate: (950: $slate-950,
     900: $slate-900,
     850: $slate-850,
     800: $slate-800,
@@ -905,8 +911,7 @@ $colors: (
     50: $slate-50,
     main: $slate,
   ),
-  timetracker: (
-    950: $timetracker-950,
+  timetracker: (950: $timetracker-950,
     900: $timetracker-900,
     850: $timetracker-850,
     800: $timetracker-800,

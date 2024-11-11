@@ -1,1 +1,1 @@
-sass timetracker.scss ../output/pico.timetracker.min.css -s compressed
+sass timetracker.scss ../output/pico.timetracker.min.css del-col
