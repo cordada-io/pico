@@ -1,0 +1,1 @@
+sass -w timetracker.scss ../output/pico.timetracker.css

@@ -1,0 +1,6 @@
+@use "../pico/scss/pico" with ($enable-classes: true,
+    $theme-color: "timetracker",
+    $css-var-prefix: "--tt-",
+    $modules: ("themes/default": false, "themes/cordada": true),
+);
+@use "../pico/scss/themes/cordada";
