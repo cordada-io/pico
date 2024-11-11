@@ -1,0 +1,1 @@
+sass timetracker.scss ../../timetracker.chat/src/static/css/pico.timetracker.min.css -s compressed
